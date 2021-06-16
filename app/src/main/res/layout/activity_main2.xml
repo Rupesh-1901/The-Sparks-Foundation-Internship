@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@drawable/grip">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profilepic"
+        android:layout_width="232dp"
+        android:layout_height="233dp"
+
+        app:layout_constraintBottom_toTopOf="@id/signoutBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/roundImageView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/gender"
+        app:layout_constraintTop_toBottomOf="@id/profilepic"
+        android:id="@+id/username"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/signoutBtn"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        android:id="@+id/gender"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#000000"/>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/signoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.765" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
